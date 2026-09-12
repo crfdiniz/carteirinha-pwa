@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1f3c88">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Carteirinha">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+  <title>App Acadêmico (Demo)</title>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MENU LATERAL -->
+<aside id="menu">
+  <div class="menu-topo">
+    <img src="foto-aluna.jpeg" alt="Foto Letícia Ferreira Miranda">
+    <strong>Letícia Ferreira Miranda</strong>
+    <small>600925251</small>
+  </div>
+
+  <div class="menu-itens">
+
+    <button class="menu-parent">
+      🎓 Acadêmico
+      <span class="seta">⌄</span>
+    </button>
+
+    <button onclick="irCarteira()">🪪 Carteirinha Estudante</button>
+    <button>📄 Documentos Digitais</button>
+    <button>💬 Fale Aluno</button>
+
+    <button class="menu-parent">
+      💰 Financeiro
+      <span class="seta">⌄</span>
+    </button>
+
+    <button>📋 Matrícula Online</button>
+    <button>📑 Protocolo</button>
+    <button>⚠️ Suas Pendências</button>
+
+  </div>
+</aside>
+
+<!-- HEADER HOME -->
+<header class="header-home">
+  <button id="menuBtn" class="icon-btn">☰</button>
+  <button class="icon-btn">🔔</button>
+</header>
+
+<!-- CONTEÚDO -->
+<main class="home">
+
+  <!-- SAUDAÇÃO -->
+  <div class="saudacao-home">
+    <span>Olá,</span>
+    <strong>LETÍCIA FERREIRA MIRANDA</strong>
+  </div>
+
+  <!-- BANNER -->
+  <div class="banner">
+    <img src="banner.png" alt="Banner Unitri">
+  </div>
+
+  <!-- CARD VAMOS COMEÇAR (imagem simulada) -->
+  <div class="card-img">
+    <img src="card-vamos-comecar.png" alt="Vamos começar">
+  </div>
+
+  <!-- CARD PROBLEMAS -->
+  <div class="card-img">
+    <img src="card-problemas.png" alt="Problemas no App">
+  </div>
+
+  <!-- BOTÕES -->
+  <div class="atalhos">
+    <img src="btn-compartilhar.png" alt="Compartilhar App">
+    <img src="btn-avaliar.png" alt="Avaliar App">
+  </div>
+
+  <!-- VERSÃO -->
+  <div class="versao-app">
+    Versão do App: 5.2.38
+  </div>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

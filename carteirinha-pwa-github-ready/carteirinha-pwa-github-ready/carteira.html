@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1f3c88">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Carteirinha">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <title>Carteirinha</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <button onclick="history.back()">‹</button>
+</header>
+
+
+<main class="container">
+
+  <section class="carteirinha">
+
+    <!-- CILINDRO AZUL -->
+    <img class="logo" src="unitricarteira.png" alt="Unitri">
+
+    <!-- FOTO + QR -->
+    <div class="linha-superior">
+      <img class="foto" src="foto-aluna.jpeg" alt="Foto do aluno">
+
+      <img 
+        class="qr"
+        src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=CARTEIRINHA-RAFAEL"
+        alt="QR Code"
+      >
+    </div>
+
+    <!-- MATRÍCULA -->
+    <div class="matricula">
+      Matrícula: <strong>600925251</strong>
+    </div>
+
+    <!-- DADOS -->
+    <div class="dados">
+      <div><span>Situação:</span> MATRICULADO(A)</div>
+      <div><span>Nome:</span> Letícia Ferreira Miranda</div>
+      <div><span>Curso:</span> Computação</div>
+      <div><span>CPF:</span> 020.452.056-81</div>
+      <div><span>RG:</span> 20.091.002</div>
+      <div><span>Dt. Nascimento:</span> 25/03/2002</div>
+      <div><span>Dt. Validade:</span> 31/12/2026</div>
+    </div>
+
+  </section>
+
+  <button class="btn-voltar" onclick="history.back()">Voltar</button>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
